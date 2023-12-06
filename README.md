@@ -45,11 +45,15 @@ azure_model_map
 section: ```fast_llm_model_deployment_id``` - your gpt-3.5-turbo or gpt-4 deployment ID 
 ```smart_llm_model_deployment_id``` - your gpt-4 deployment ID 
 ```embedding_model_deployment_id``` - your text-embedding-ada-002 v2 deployment ID 
+
 Please specify all of these values as double-quoted strings
-```# Replace string in angled brackets (<>) to your own ID
+
+```
+# Replace string in angled brackets (<>) to your own ID
 azure_model_map:
   fast_llm_model_deployment_id: "<my-fast-llm-deployment-id>"
-  ...```
+  ...
+```
 
 Details can be found here: https://pypi.org/project/openai/ in the ```Microsoft Azure Endpoints``` section and here: https://learn.microsoft.com/en-us/azure/cognitive-services/openai/tutorials/embeddings?tabs=command-line for the embedding model.
 
