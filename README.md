@@ -197,13 +197,16 @@ _
 ```MEMORY_BACKEND=redis
 REDIS_HOST=localhost
 REDIS_PORT=6379
-REDIS_PASSWORD= <PASSWORD>```
+REDIS_PASSWORD= <PASSWORD>
+```
 
 You can optionally set ```WIPE_REDIS_ON_START=False``` to persist memory stored in Redis.
 
 You can specify the memory index for redis using the following:
 
-```MEMORY_INDEX=<WHATEVER>```
+```
+MEMORY_INDEX=<WHATEVER>
+```
 
 **🌲 Pinecone API Key Setup**
 Pinecone enables the storage of vast amounts of vector-based memory, allowing for only relevant memories to be loaded for the agent at any given time.
