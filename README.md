@@ -154,13 +154,21 @@ _Remember that your free daily custom search quota allows only up to 100 searche
 
 **For Windows Users:**
 
-```setx GOOGLE_API_KEY "YOUR_GOOGLE_API_KEY"```
-```setx CUSTOM_SEARCH_ENGINE_ID "YOUR_CUSTOM_SEARCH_ENGINE_ID"```
+```
+setx GOOGLE_API_KEY "YOUR_GOOGLE_API_KEY"
+```
+```
+setx CUSTOM_SEARCH_ENGINE_ID "YOUR_CUSTOM_SEARCH_ENGINE_ID"
+```
 
 **For macOS and Linux users:**
 
-```export GOOGLE_API_KEY="YOUR_GOOGLE_API_KEY"```
-```export CUSTOM_SEARCH_ENGINE_ID="YOUR_CUSTOM_SEARCH_ENGINE_ID"```
+```
+export GOOGLE_API_KEY="YOUR_GOOGLE_API_KEY"
+```
+```
+export CUSTOM_SEARCH_ENGINE_ID="YOUR_CUSTOM_SEARCH_ENGINE_ID"
+```
 
 **Setting Your Cache Type**
 
@@ -178,23 +186,25 @@ To switch to either, change the ```MEMORY_BACKEND``` env variable to the value t
 
 **Redis Setup**
 
-_CAUTION This is not intended to be publicly accessible and lacks security measures. Therefore, avoid exposing Redis to the internet without a password or at all
-_
+CAUTION This is not intended to be publicly accessible and lacks security measures. Therefore, avoid exposing Redis to the internet without a password or at all
+
 
 1. Install docker (or Docker Desktop on Windows)
 
 2. Launch Redis container
 
-```docker run -d --name redis-stack-server -p 6379:6379 redis/redis-stack-server:latest```
+```
+docker run -d --name redis-stack-server -p 6379:6379 redis/redis-stack-server:latest
+```
 
 See https://hub.docker.com/r/redis/redis-stack-server for setting a password and additional configuration.
 
 Set the following settings in ```.env```
 
-_Replace PASSWORD in angled brackets (<>)
-_
+Replace PASSWORD in angled brackets (<>)
 
-```MEMORY_BACKEND=redis
+```
+MEMORY_BACKEND=redis
 REDIS_HOST=localhost
 REDIS_PORT=6379
 REDIS_PASSWORD= <PASSWORD>
@@ -225,9 +235,9 @@ Alternatively, you can set them from the command line (advanced):
 
 For Windows Users:
 
-```setx PINECONE_API_KEY "<YOUR_PINECONE_API_KEY>"
-setx PINECONE_ENV "<YOUR_PINECONE_REGION>" # e.g: "us-east4-gcp"
-setx MEMORY_BACKEND "pinecone"```
+```setx PINECONE_API_KEY "<YOUR_PINECONE_API_KEY>"```
+```setx PINECONE_ENV "<YOUR_PINECONE_REGION>" # e.g: "us-east4-gcp"```
+```setx MEMORY_BACKEND "pinecone"```
 
 For macOS and Linux users:
 
