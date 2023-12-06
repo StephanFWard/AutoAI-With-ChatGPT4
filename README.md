@@ -263,13 +263,15 @@ Weaviate is an open-source vector database. It allows to store data objects and 
 
 Setting up environment variables In your ```.env``` file set the following:
 
-```MEMORY_BACKEND=weaviate
+```
+MEMORY_BACKEND=weaviate
 WEAVIATE_HOST="127.0.0.1" # the IP or domain of the running Weaviate instance WEAVIATE_PORT="8080"
 WEAVIATE_PROTOCOL="http" WEAVIATE_USERNAME="your username"
 WEAVIATE_PASSWORD="your password"
 WEAVIATE_API_KEY="your weaviate API key if you have one"
 WEAVIATE_EMBEDDED_PATH="/home/me/.local/share/weaviate" # this is optional and indicates where the data should be persisted when running an embedded instance
-USE_WEAVIATE_EMBEDDED=False # set to True to run Embedded Weaviate MEMORY_INDEX="Autogpt" # name of the index to create for the application```
+USE_WEAVIATE_EMBEDDED=False # set to True to run Embedded Weaviate MEMORY_INDEX="Autogpt" # name of the index to create for the application
+```
 
 **View Memory Usage**
 
@@ -278,7 +280,9 @@ View memory usage by using the ```--debug``` flag :)
 🧠 **Memory pre-seeding**
 Memory pre-seeding allows you to ingest files into memory and pre-seed it before running Auto-GPT.
 
-```#python data_ingestion.py -h
+
+```
+#python data_ingestion.py -h
 usage: data_ingestion.py [-h] (--file FILE | --dir DIR) [--init] [--overlap OVERLAP] [--max_length MAX_LENGTH]
 
 Ingest a file or a directory with multiple files into memory. Make sure to set your .env before running this script.
