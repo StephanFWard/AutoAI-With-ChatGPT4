@@ -14,7 +14,9 @@ Make sure you have all the requirements listed above, if not, install/get them T
 
 Clone the repository: For this step, you need Git installed. Alternatively, you can download the latest stable release (Source code (zip), bottom of the page).
 
-git clone https://github.com/StephanFWard/AutoAI-With-ChatGPT4.git Navigate to the directory where the repository was downloaded
+```git clone https://github.com/StephanFWard/AutoAI-With-ChatGPT4.git
+
+Navigate to the directory where the repository was downloaded
 
 cd Auto-GPT Install the required dependencies
 
